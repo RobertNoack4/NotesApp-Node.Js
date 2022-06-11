@@ -1,8 +1,7 @@
 import fs from "fs"
 
 export function getNotes() {
-    const text = fs.readFileSync("notes.txt", "utf-8");
-    return text;
+
 }
 
 export function addNote(title, body) {
