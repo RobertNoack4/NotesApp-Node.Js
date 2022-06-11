@@ -5,5 +5,8 @@
   "main": "app.js",
   "author": {
     "name": ""
+  },
+  "dependencies": {
+    "validator": "^13.7.0"
   }
 }
