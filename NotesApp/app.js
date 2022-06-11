@@ -4,6 +4,7 @@ import * as notes from "./notes.js"
 
 // Sets arguments for opening app.js
 yargs(hideBin(process.argv))
+
     // Creates Add command
     .command({
         command: "add",
@@ -26,6 +27,7 @@ yargs(hideBin(process.argv))
             notes.addNote(argv.title, argv.body)
         }
     })
+
     // Creates Remove command
     .command({
         command: "remove",
@@ -43,6 +45,7 @@ yargs(hideBin(process.argv))
             notes.removeNote(argv.title)
         }
     })
+
     // Creates List command
     .command({
         command: "list",
@@ -52,6 +55,7 @@ yargs(hideBin(process.argv))
             console.log("Listing all notes")
         }
     })
+
     // Creates Read command
     .command({
         command: "read",
@@ -61,5 +65,6 @@ yargs(hideBin(process.argv))
             console.log("Reading a note")
         }
     })
+
     .demandCommand(1)
     .parse()
