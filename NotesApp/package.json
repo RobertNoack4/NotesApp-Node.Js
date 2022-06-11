@@ -1,6 +1,6 @@
 {
   "name": "notes-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "NotesApp",
   "main": "app.js",
   "type": "module",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "chalk": "^5.0.1",
-    "validator": "^13.7.0"
+    "validator": "^13.7.0",
+    "yargs": "^17.5.1"
   }
 }
