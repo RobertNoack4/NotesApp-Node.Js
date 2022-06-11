@@ -1,3 +1,4 @@
-'use strict';
+const fs = require("fs");
 
-console.log('Hello world');
+fs.writeFileSync("notes.txt", "Dieser Text wurde mit dem File erstellt.")
+fs.appendFileSync("notes.txt", "\nDieser Text wurde hinzugefuegt.");
