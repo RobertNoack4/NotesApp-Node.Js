@@ -1,7 +1,6 @@
-const validator = require("validator")
+import chalk from "chalk"
+import * as notes from "./notes.js"
 
-const getNotes = require("./notes")
-const notesText = getNotes()
+const notesText = notes.getNotes()
 console.log(notesText)
-
-console.log(validator.isURL("test"))
+console.log(chalk.green("success!"))
