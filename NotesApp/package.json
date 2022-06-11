@@ -1,0 +1,9 @@
+{
+  "name": "notes-app",
+  "version": "0.0.0",
+  "description": "NotesApp",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  }
+}
