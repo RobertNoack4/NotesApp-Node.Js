@@ -47,7 +47,7 @@ yargs(hideBin(process.argv))
         command: "list",
         describe: "Shows a list of all Notes",
         // Creates Function to run when remove is given as a command
-        handler: () => console.log("Listing all notes")
+        handler: () => notes.listNotes()
     })
 
     // Creates Read command

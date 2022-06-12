@@ -1,8 +1,10 @@
 import fs from "fs"
 import chalk from "chalk"
 
-export function getNotes() {
-
+export function listNotes() {
+    const notes = loadNotes()
+    console.log("Your Notes:")
+    notes.forEach((note) => console.log(note.title))
 }
 
 export function addNote(title, body) {
