@@ -54,8 +54,16 @@ yargs(hideBin(process.argv))
     .command({
         command: "read",
         describe: "Read a note",
+        builder: {
+            // Creates Title Option
+            title: {
+                describe: "Note Title",
+                demandOption: true,
+                type: "string",
+            }
+        },
         // Creates Function to run when read is given as a command
-        handler: () => console.log("Reading a note")
+        handler: (argv) => notes.readNote(argv.title)
     })
 
     .demandCommand(1)
