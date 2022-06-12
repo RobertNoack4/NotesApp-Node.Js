@@ -23,9 +23,7 @@ yargs(hideBin(process.argv))
             },
         },
         // Creates Function to run when add is given as a command
-        handler: function (argv) {
-            notes.addNote(argv.title, argv.body)
-        }
+        handler: (argv) => notes.addNote(argv.title, argv.body)
     })
 
     // Creates Remove command
@@ -41,9 +39,7 @@ yargs(hideBin(process.argv))
             }
         },
         // Creates Function to run when remove is given as a command
-        handler: function (argv) {
-            notes.removeNote(argv.title)
-        }
+        handler: (argv) => notes.removeNote(argv.title)
     })
 
     // Creates List command
@@ -51,9 +47,7 @@ yargs(hideBin(process.argv))
         command: "list",
         describe: "Shows a list of all Notes",
         // Creates Function to run when remove is given as a command
-        handler: function () {
-            console.log("Listing all notes")
-        }
+        handler: () => console.log("Listing all notes")
     })
 
     // Creates Read command
@@ -61,9 +55,7 @@ yargs(hideBin(process.argv))
         command: "read",
         describe: "Read a note",
         // Creates Function to run when read is given as a command
-        handler: function () {
-            console.log("Reading a note")
-        }
+        handler: () => console.log("Reading a note")
     })
 
     .demandCommand(1)
